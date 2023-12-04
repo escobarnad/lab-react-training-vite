@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.driver {
+  display: flex;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: lightblue;
+  color: white;
+}
+
+.driver img {
+  width: 150px; 
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.driver-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.driver h3,
+.driver Rating,
+.driver p {
+  margin: 8px 0;
+}
+
+
+

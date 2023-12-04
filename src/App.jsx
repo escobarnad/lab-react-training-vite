@@ -4,8 +4,17 @@ import Greetings from "./components/Greetings";
 import Random from "./components/Random";
 import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
+import Rating from "./components/Rating";
+import { useState } from "react";
+import DriverCard from "./components/DriverCard";
+import LikeButton from "./components/LikeButton";
+import ClickablePicture from "./components/ClickablePicture";
+import Dice from "./components/Dice";
 
 function App() {
+  const [rating, setRating] = useState(null);
+  const [hover, setHover] = useState(null);
+
   return (
     <div className="App">
       <h1> LAB | React Training</h1>
@@ -35,6 +44,25 @@ function App() {
         bgColor="#11aa99"
         color="white"
       />
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER",
+        }}
+      />
+      <LikeButton />
+      <ClickablePicture img="messi.jpg" imgClicked="messi-glasses.png" />
+      <Dice />
     </div>
   );
 }
