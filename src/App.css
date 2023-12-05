@@ -77,4 +77,26 @@ th, td{
   border: 1px solid;
 }
 
+.profile {
+  display: flex;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+
+}
+
+.profile img {
+  width: 150px; 
+  height: 100%;
+  object-fit: cover;
+  align-self: center;
+}
+
+.profile-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 
