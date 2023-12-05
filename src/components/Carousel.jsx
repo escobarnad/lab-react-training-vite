@@ -4,8 +4,6 @@ function Carousel({ images }) {
   const [image, setImage] = useState(images[0]);
   const [count, setCount] = useState(0);
 
-  console.log(count);
-
   const handleClickLeft = () => {
     const newIndex = (count - 1 + images.length) % images.length;
     setCount(newIndex);
